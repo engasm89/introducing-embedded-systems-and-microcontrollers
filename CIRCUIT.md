@@ -1,21 +1,16 @@
-# Embedded Intro — Circuit Schematic
+# Introducing Embedded Systems And Microcontrollers — Circuit Notes
 
-- Course: Introducing Embedded Systems and Microcontrollers
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/embedded-systems-and-microcontrollers/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- LED on a GPIO with resistor; button to another GPIO for interaction.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- GPIO ---[330Ω]---|> LED --- GND
- Button -> GPIO (pull-up)
-```
-
-## Purchase With Discount
-
-Get a discounted price and learn core embedded concepts — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
